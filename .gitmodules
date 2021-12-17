@@ -1,0 +1,3 @@
+[submodule "okex-api-v5"]
+	path = okex-api-v5
+	url = https://github.com/Coinrisings/okex-api-v5.git
