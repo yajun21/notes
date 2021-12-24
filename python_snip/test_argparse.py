@@ -9,6 +9,7 @@ parser.add_argument('--sum', dest='accumulate', action='store_const',
 
 parser.add_argument('--foobar', action='store_true', default=False)
 parser.add_argument('--foo', dest='bar', type=int)
+parser.add_argument('--foo1', type=int)
 
 args = parser.parse_args()
 print(args.integers)
@@ -16,3 +17,4 @@ print(args.accumulate)
 print(args.accumulate(args.integers))
 print(args.foobar)
 print(args.bar, type(args.bar))
+print(args.foo1, type(args.foo1))
