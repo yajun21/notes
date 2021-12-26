@@ -1,3 +1,6 @@
 [submodule "okex-api-v5"]
 	path = okex-api-v5
 	url = https://github.com/Coinrisings/okex-api-v5.git
+[submodule "course_codes"]
+	path = course_codes
+	url = https://github.com/51bitquant/course_codes.git
