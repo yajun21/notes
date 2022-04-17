@@ -8,6 +8,15 @@ print("ts_now int(time.time()): ", ts_now)
 ts_local = time.localtime()
 print("ts_local: time.localtime()", ts_local)
 
+date = datetime.date(ts_local.tm_year, ts_local.tm_mon, ts_local.tm_mday)
+pre = 5 - ts_local.tm_wday
+if pre > 0: pre -= 7
+
+nearsat = date +  datetime.timedelta(days=pre)
+print("date: {}-{}-{}".format( date.year, date.month, date.day))
+print("near Sat", nearsat)
+
+
 
 s1 = time.asctime(ts_local)
 s2 = time.ctime(ts_now)
